@@ -4,6 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </head>
-  <body></body>
+  <body>
+    <section class="home">
+      <div class="home-text">
+        <h1> Performing with Excellence <br> <span>To do More for More</span></h1>
+        <p>We are excellence with the pc parts compatibility to do more for you! <br>With the ever-changing tech, you'll always get the latest and most accurate compatibility.</p>
+        <a href="#" class="home-btn">Create Now</a>
+        <a href="#" class="home-btn2">Buy Pre-Build</a>
+      </div>
+    </section>
+
+<!-- Filter Section -->
+<div class="filter-section">
+  <h4>Search by Budget and PC Parts</h4>
+  <form id="filter-form">
+      <!-- Budget Input -->
+      <div class="form-group">
+          <label for="budget">Your Budget</label>
+          <input type="number" class="form-control" id="budget" placeholder="Enter your budget" required />
+      </div>
+
+      <!-- Part Selection Section -->
+      <div class="form-group">
+          <label for="part-type">Select PC Parts</label>
+          <div id="part-container">
+              <!-- Dynamically add part fields here -->
+          </div>
+          <button type="button" id="add-part" class="btn btn-secondary">Add Another Part</button>
+      </div>
+
+      <!-- Search Button -->
+      <button type="submit" class="btn btn-primary">Search</button>
+  </form>
+</div>
+        </div>
+      </div>
+    </section>
+    <script src="BuildScript.js"></script>
+  </body>
 </html>
