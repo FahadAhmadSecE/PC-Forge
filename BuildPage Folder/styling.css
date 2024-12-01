@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+/* Applies to whole HTML */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+/* First section */
+.home {
+    position: relative;
+    width: 100%;
+    min-height: 70vh; /* Ensure there's enough height for the title */
+    background: url(./blue-background-7470781_1280.jpg) no-repeat center top;
+    background-size: cover; /* Ensures the background covers the section, but doesn't stretch */
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 20px;
+}
+/* Title Styles */
+.home-text h1 {
+    margin: 0; /* Remove any margin */
+    color: #000000;
+    letter-spacing: 4px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 1500;
+    font-size: 50px;
+    padding: 5px;
+}
+
+.home-text h1 span {
+    color: aliceblue;
+    font-weight: 500;
+}
+
+.home-text p {
+    color: #FFEFCA;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 38px;
+    margin: 15px 0;
+}
+
+/* Buttons */
+.home-btn, .home-btn2 {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 550;
+    padding: 15px 30px;
+    color: white;
+    background: #de8b25;
+    border-radius: 6px;
+    transition: ease .40s;
+    margin: 10px 0; /* Add some space between buttons */
+}
+
+.home-btn2 {
+    background-color: rgb(0 0 0 / 0.3);
+}
+
+.home-btn:hover, .home-btn2:hover {
+    transform: scale(1.1);
+    text-decoration: none;
+    color: white;
+}
+
+/* Filters Section - Move it down */
+.filters-section {
+    margin-top: 50px; /* Reduce margin to bring filters closer */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Filters form styling */
+.filters-section div {
+    margin-bottom: 15px;
+}
+
+.filters-section label {
+    font-size: 18px;
+}
+
+.filters-section select {
+    padding: 8px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/* Pre-Built PC section */
+.second-section {
+    margin: 50px;
+}
+
+/* Other sections remain as is */
+
+.send {
+    margin-bottom: 230px;
+}
+
+.send form {
+    max-width: 100%;
+    width: 800px;
+    position: relative;
+}
+
+.send form input:first-child {
+    display: inline-block;
+    width: 100%;
+    padding: 20px 150px 20px 30px;
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    color: #000000;
+}
+
+.send form input:last-child {
+    display: inline-block;
+    position: absolute;
+    outline: none;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 15px;
+    background: orange;
+    color: white;
+    top: 6px;
+    right: 6px;
+    cursor: pointer;
+    transition: ease .40s;
+}
+
+.send form input:last-child:hover {
+    background: rgb(131, 188, 47);
+    transform: scale(1.1);
+}
