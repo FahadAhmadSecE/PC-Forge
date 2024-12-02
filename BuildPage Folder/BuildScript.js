@@ -20,10 +20,13 @@ $(document).ready(function () {
             { name: "AMD RX6000 Series", price: 350 },
         ],
         ram: [
-            { name: "16GB", price: 120 },
-            { name: "32GB", price: 170 },
-            { name: "64GB", price: 220 },
-            { name: "128GB", price: 300 },
+            { name: "16GB DDR4", price: 30 },
+            { name: "32GB DDR4", price: 80 },
+            { name: "64GB DDR4", price: 150 },
+            { name: "16GB DDR5", price: 120 },
+            { name: "32GB DDR5", price: 170 },
+            { name: "64GB DDR5", price: 220 },
+            { name: "128GB DDR5", price: 300 },
         ],
         cooler: [
             { name: "Cooler Master", price: 90 },
@@ -148,11 +151,22 @@ $(document).ready(function () {
 
         // Display the selected filters
         if (parts.length > 0) {
-            $("#pc-cards").html(
-                `<p>Filtered by Budget: $${budget}</p><p>Selected Parts:</p><ul>${parts.map(
-                    (part) => `<li>${part.name} - $${part.price}</li>`
-                ).join("")}</ul>`
-            );
+            let partsListHTML = `<p>Filtered by Budget: $${budget}</p><p>Selected Parts:</p><ul>`;
+            parts.forEach((part) => {
+                const links = generateStoreLinks(part);
+                partsListHTML += `
+                    <li>
+                        ${part.name} - $${part.price}
+                        <br>
+                        <a href="${links.bestBuy}" target="_blank">View on Best Buy</a> |
+                        <a href="${links.amazon}" target="_blank">View on Amazon</a> |
+                        <a href="${links.newegg}" target="_blank">View on newegg</a>
+                    </li>
+                `;
+            });
+            partsListHTML += `</ul>`;
+
+            $("#pc-cards").html(partsListHTML);
         } else {
             alert("Please select parts to build a PC.");
         }
@@ -195,5 +209,20 @@ $(document).ready(function () {
             console.error("Error fetching AI response:", error);
             $('#pc-cards').append(`<p><strong>AI Feedback:</strong> There was an error retrieving the AI response. Please try again later.</p>`);
         }
+    }
+
+    // Generate links for each part individually
+    function generateStoreLinks(part) {
+        const partName = part.name.split(" ").join("+");
+    
+        const bestBuyLink = "https://www.bestbuy.ca/en-ca/search?search=" + partName;
+        const amazonLink = "https://www.amazon.com/s?k=" + partName;
+        const neweggLink = "https://www.newegg.com/p/pl?d=" + partName;
+    
+        return {
+            bestBuy: bestBuyLink,
+            amazon: amazonLink,
+            newegg: neweggLink 
+        };
     }
 });
