@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Built PC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+</head>
+
+<body>
+
+    <main>
+        <div class="banner">
+            <h1>Browse Packages</h1>
+            <p>Choose from below the perfect prebuilt pc or laptop of your own choice that suits your budget</p>
+            <hr class="banner-divider">
+            <div class="page-links">
+                <a href="http://127.0.0.1:5500/Landing%20Folder/Landing.html">Home</a>
+                <p>></p>
+                <a href="http://127.0.0.1:5500/PresetPackagePage%20Folder/PackagePage.html">Browse Prebuilt PC's</a>
+            </div>
+        </div>
+
+        <div class="search-banner">
+            <h1>Search:</h1>
+            <div class="search-bar">
+                <input type="text" placeholder="Computers">
+                <button>x</button>
+            </div>
+            <h1>Filter:</h1>
+            <div class="filter">
+                <select name="computer-category" id="computer-category">
+                    <option value="all">All</option>
+                    <option value="prebuilt">Pre-built PC's</option>
+                    <option value="laptop">Laptops</option>
+                </select>
+            </div>
+            <div class="divider-left"></div>
+            <div class="socials">
+                <a href="https://www.facebook.com" class="m-2">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.twitter.com" class="m-2">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a href="https://www.github.com" class="m-2">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a href="customerservice@pcforge.com" class="m-2">
+                    <i class="bi bi-envelope"></i>
+                </a>
+                <a href="https://www.instagram.com" class="m-2">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://www.whatsapp.com" class="m-2">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+            </div>
+            <div class="divider-right"></div>
+            <div class="country-selector">
+                <h1>Select Country:</h1>
+                <img src="../PresetPackagePage Folder/Images/canada.jpg" id="flag">
+                <select name="country" id="country">
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                    <option value="uk">UK</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="product-container">
+            <div class="product" id="prebuilt" data-value="1">
+                <img id="pc-photo" src="../PresetPackagePage Folder/Images/Alienware Aurora R13.jpg"
+                    alt="Product Image">
+                <p class="product-name">Dell Alienware Aurora R13</p>
+                <p class="product-specs">Intel Core i7-13700F CPU/NVIDIA GeForce RTX 4060/16GB DDR5/1TB PCIe Gen 4 SSD
+                </p>
+                <a href="https://www.amazon.ca/Acer-Predator-i7-13700F-Manufacturer-Warranty/dp/B0CQTJ7LV1/ref=sr_1_7?crid=16WGJP257HW7U&dib=eyJ2IjoiMSJ9.cjCwHTtwjhBFFa0zbt5eyXLXe0WbnF6Aa08NmpyBqIozugFHSstYlkp74cj92A6SQk65gN3xBRDpE5sozE9N0uj4_AlcB41zFXi2wcbpgP_KqOEX0eEM_Dd_sZysHHhf44IBFfaQRQPMntqdyiU1a5WeZKaLLXXB9WQcgaKwbl6H-kr2DamsgJkpSKApo487Yn8vQoV8h4tw3agUn5C_TqYuAjPfjmrjbUtK8_9tl71VHeIZgMNY8ekMDy3CdtyrhiIi8Fgf0RLxla6Emtp5bSp8MlimG9YgkCfek66XSXM.sWrCtdiuaUk000FbMp6oGaxfEVPYliCzuSeoGnpm-1w&dib_tag=se&keywords=prebuilt+pc&qid=1732582495&sprefix=prebuilt+pcs%2Caps%2C100&sr=8-7"
+                    class="buy-btn">
+                    <img src="https://freepnglogo.com/images/all_img/1715487998amazon-logo-transparent.png"
+                        alt="Amazon Logo">
+                </a>
+                <p>Now Available!</p>
+            </div>
+            <div class="product" id="prebuilt" data-value="2">
+                <img id="pc-photo" src="../PresetPackagePage Folder/Images/Orion 3000.jpg" alt="Product Image">
+                <p class="product-name">Acer Predator Orion 3000</p>
+                <p class="product-specs">Intel Core i7 12700F/1TB HDD/512GB SSD/16GB RAM/RTX 3070</p>
+                <a href="https://www.amazon.ca/Dell-Alienware-Aurora-R13-Desktop/dp/B0BTT79SJR/ref=sr_1_29_so_PERSONAL_COMPUTER?crid=2SW1FCYZENHQ3&dib=eyJ2IjoiMSJ9.3SEV0EsxQ3TIVB1LtV8CIeuTHaLPWsj00YsOyyzw28-3yHrgWDfMeOTO1JlGSI6Ee65_lYYqAb3yxenvRWyxZ3JoGbc3ba4qXdp5xrmCcfL4dItVKdQ0zNFdKH6a_-lS8SakuNKGX_olD86YPvzrJ-zhNRvg_4W31LiIlEKrZC3xYat8DvB7okDLIYQaFEsvpp6wMRZmObW_5aD8sXkf4jLWAO--_fBJEJZPSmFipS3oAPlDYXX8odT4sWJf8tFXZ_ecwvbcASkDrC2LIb_37oyyCh9MFgiw2ww7tEk2mk4.U77Q81DKOHIE02WLmRR1toVRam_VOTOVtx1Cdnd4lJ8&dib_tag=se&keywords=alienware%2Baurora%2Br13%2B3070&qid=1732048493&sprefix=alienware%2Baurora%2Br13%2B3070%2Caps%2C102&sr=8-29&th=1"
+                    class="buy-btn">
+                    <img src="https://freepnglogo.com/images/all_img/1715487998amazon-logo-transparent.png"
+                        alt="Amazon Logo">
+                </a>
+                <p>Now Available!</p>
+            </div>
+            <div class="product" id="prebuilt" data-value="3">
+                <img id="pc-photo" src="../PresetPackagePage Folder/Images/Cyberpower Xtreme.jpg" alt="Product Image">
+                <p class="product-name">CYBERPOWERPC Gamer Xtreme</p>
+                <p class="product-specs">Intel Core i9-14900KF 3.2GHz/GeForce RTX 4070 Super 12GB/32GB DDR5/2TB PCIe
+                    Gen4 SSD</p>
+                <a href="https://www.amazon.ca/CYBERPOWERPC-i9-14900KF-GeForce-Windows-GXiVR8080A38/dp/B0DCMPPD9X/ref=sr_1_11?crid=16WGJP257HW7U&dib=eyJ2IjoiMSJ9.cjCwHTtwjhBFFa0zbt5eyXLXe0WbnF6Aa08NmpyBqIozugFHSstYlkp74cj92A6SQk65gN3xBRDpE5sozE9N0uj4_AlcB41zFXi2wcbpgP_KqOEX0eEM_Dd_sZysHHhf44IBFfaQRQPMntqdyiU1a5WeZKaLLXXB9WQcgaKwbl6H-kr2DamsgJkpSKApo487Yn8vQoV8h4tw3agUn5C_TqYuAjPfjmrjbUtK8_9tl71VHeIZgMNY8ekMDy3CdtyrhiIi8Fgf0RLxla6Emtp5bSp8MlimG9YgkCfek66XSXM.sWrCtdiuaUk000FbMp6oGaxfEVPYliCzuSeoGnpm-1w&dib_tag=se&keywords=prebuilt%2Bpc&qid=1732582495&sprefix=prebuilt%2Bpcs%2Caps%2C100&sr=8-11&th=1"
+                    class="buy-btn">
+                    <img src="https://freepnglogo.com/images/all_img/1715487998amazon-logo-transparent.png"
+                        alt="Amazon Logo">
+                </a>
+                <p>Now Available!</p>
+            </div>
+            <div class="product" id="prebuilt" data-value="4"> 
+                <img id="pc-photo" src="../PresetPackagePage Folder/Images/ROG Strix G13.jpg" alt="Product Image">
+                <p class="product-name">ROG Strix G13</p>
+                <p class="product-specs">Intel Core i7-14700F/GeForce RTX 4060/32GB DDR5 RAM/1TB SSD</p>
+                <a href="https://www.amazon.ca/Desktop-i7-14700F-GeForce-Windows-G13CHR-DSI74060-CB/dp/B0CY9X2Y5W/ref=sr_1_1?crid=28KGIKZWFA93E&dib=eyJ2IjoiMSJ9.w9HA0B3UK8rCFu9TPWHSidg5OkomOfxzfqpz3yl6nJD0ghS5mx7l0y-0NwGU8WIevADXyXBKDaLfa66Mwt3Qx4xdSAKXX9accmcpPY9Og9i_NVXpe0fHWh-zd7wL2qZ4QasKmwW5YJZ0KHUPGSiu2HBBfMQA-mqSyLz7oaZ85n0OWZS1KSJ46xeewaK8N-AZ62iFn1-POBVFs3y1QjS4p7-sv96JlNw1ErTUk7d5wh8.lyDtR_2t1EDAsBFsrPA-yB5Offng54px1YXIR4KSyU0&dib_tag=se&keywords=asus+rog+g13&qid=1732584255&sprefix=asus+rog+g%2Caps%2C170&sr=8-1"
+                    class="buy-btn">
+                    <img src="https://freepnglogo.com/images/all_img/1715487998amazon-logo-transparent.png"
+                        alt="Amazon Logo">
+                </a>
+                <p>Now Available!</p>
+            </div>
+            <div class="product" id="prebuilt" data-value="5">
+                <img id="pc-photo" src="../PresetPackagePage Folder/Images/Cyberpower Master.jpg" alt="Product Image">
+                <p class="product-name">CYBERPOWERPC Gamer Master</p>
+                <p class="product-specs">AMD Ryzen 7 8700F 4.1GHz/GeForce RTX 4060 Ti 8GB/16GB DDR5/1TB PCIe Gen4 SSD
+                </p>
+                <a href="https://www.amazon.ca/CYBERPOWERPC-Master-GeForce-Windows-GMA2900A/dp/B0DCMMZS61/ref=sr_1_6?crid=33ZWXTSJKHTEO&dib=eyJ2IjoiMSJ9.1O_Ib_Qwzsrb5-X_7w1iX3VKeLPRHNAieEGdOR_SoESCXLcp_kBxWOHGtK7kRAcSnIFMBH7oAMvvnFTLx-l3L8cHDsFZvv_4XpugwKWN9cxzz2SqM3d5vZ6kvugBYi2wttbqZElHP96hRs1fmJqyNoiW9S801g_cPpdatBcjuW-MUb1oKY92g6RnqGDrqwOyIgd4mOB2qblL9W_e4REbdTbcz3lzbEUU7SAw5vvVSjOUNBBV-A6fv7EWUrg7fGoi8ntBpark1x-N0NCeFAHeunHe47OTx5tIhylcPrAoHYs.hNjiH92Yf681F9Xrbz88yxybmxhiZCsUCF_lTMqGE2c&dib_tag=se&keywords=desktop%2Bpc&qid=1732582776&sprefix=desktop%2Bp%2Caps%2C146&sr=8-6&th=1"
+                    class="buy-btn">
+                    <img src="https://freepnglogo.com/images/all_img/1715487998amazon-logo-transparent.png"
+                        alt="Amazon Logo">
+                </a>
+                <p>Now Available!</p>
+            </div>
+            <div class="product" id="prebuilt" data-value="6">
+                <img id="pc-photo" src="../PresetPackagePage Folder/Images/Alienware Aurora R15.jpg">
+                <p class="product-name">Alienware Aurora R15</p>
+                <p class="product-specs">AMD Ryzen 9 7900X/32GB DDR5 RAM/1TB SSD/2TB HDD/NVIDIA GeForce RTX 4080/16GB
+                    GDDR6X</p>
+                <a href="https://www.amazon.ca/Alienware-Aurora-R15-Gaming-Desktop/dp/B0C2VX6HN8/ref=sr_1_50?crid=33ZWXTSJKHTEO&dib=eyJ2IjoiMSJ9.1O_Ib_Qwzsrb5-X_7w1iX3VKeLPRHNAieEGdOR_SoESCXLcp_kBxWOHGtK7kRAcSnIFMBH7oAMvvnFTLx-l3L8cHDsFZvv_4XpugwKWN9cxzz2SqM3d5vZ6kvugBYi2wttbqZElHP96hRs1fmJqyNoiW9S801g_cPpdatBcjuW-MUb1oKY92g6RnqGDrqwOyIgd4mOB2qblL9W_e4REbdTbcz3lzbEUU7SAw5vvVSjOUNBBV-A6fv7EWUrg7fGoi8ntBpark1x-N0NCeFAHeunHe47OTx5tIhylcPrAoHYs.hNjiH92Yf681F9Xrbz88yxybmxhiZCsUCF_lTMqGE2c&dib_tag=se&keywords=desktop+pc&qid=1732582776&sprefix=desktop+p%2Caps%2C146&sr=8-50"
+                    class="buy-btn">
+                    <img src="https://freepnglogo.com/images/all_img/1715487998amazon-logo-transparent.png"
+                        alt="Amazon Logo">
+                </a>
+                <p>Now Available!</p>
+            </div>
+            <div class="product" id="prebuilt" data-value="7">
+                <img id="pc-photo" src="../PresetPackagePage Folder/Images/Predator P03.jpg" alt="Product Image">
+                <p class="product-name">Acer Predator P03</p>
+                <p class="product-specs">Intel Core i7-14700F/1TB HDD/512GB SSD/16GB RAM/GeForce RTX 4060/Windows 11</p>
+                <a href="https://www.amazon.ca/Acer-Predator-i7-13700F-Manufacturer-Warranty/dp/B0CQTJ7LV1/ref=sr_1_5?crid=18URJLFCHEBH6&dib=eyJ2IjoiMSJ9.LFBsli-rr6fhmvePqcSFmnNm5OVeU6MiC_5e1upmbTd9xymSPPL5a9c4PY4SkUn9Wx6mCPDBJ0DbAmJngFS0ThluqS4MXkB-RhWsriM6Wil_W-Cl3XXQ9sKggNsQYL9n0QXBUkOWL9zJ5FFOa6DgCKcV553Q3btSvXPHtDmanEmu-8yyK_LddbE5zBsjUOFdxba8VmFvE1zDba8I33DBLgepIBz75s4urHFNVPurgX2RrS_xX19dEo2oc-mxbhBIyTcvsG-YdU2yJ47mCR6fLXXvR_e8CoCsKHqqqrQKVeQ.cSvTxOMfprqcpns4NJhlk08eG_TERJlOnGwbpwXO1QM&dib_tag=se&keywords=acer+predator+p03+gaming+pc+i7-14700f&qid=1732048790&sprefix=acer+predator+p03+gaming+pc+i7-14700f%2Caps%2C82&sr=8-5"
+                    class="buy-btn">
+                    <img src="https://freepnglogo.com/images/all_img/1715487998amazon-logo-transparent.png"
+                        alt="Amazon Logo">
+                </a>
+                <p>Now Available!</p>
+            </div>
+            <div class="product" id="prebuilt" data-value="8">
+                <img id="pc-photo" src="../PresetPackagePage Folder/Images/MSI Codex R2.jpg" alt="Product Image">
+                <p class="product-name">MSI Codex R2</p>
+                <p class="product-specs">Intel Core i5-12400F/GeForce RTX 3050 6G/16GB Memory (8GB x 2)/500GB SSD</p>
+                <a href="https://www.amazon.ca/MSI-Codex-R2-i5-12400F-VR-Ready/dp/B0DK7XY7V8/ref=sr_1_54?crid=33ZWXTSJKHTEO&dib=eyJ2IjoiMSJ9.1O_Ib_Qwzsrb5-X_7w1iX3VKeLPRHNAieEGdOR_SoESCXLcp_kBxWOHGtK7kRAcSnIFMBH7oAMvvnFTLx-l3L8cHDsFZvv_4XpugwKWN9cxzz2SqM3d5vZ6kvugBYi2wttbqZElHP96hRs1fmJqyNoiW9S801g_cPpdatBcjuW-MUb1oKY92g6RnqGDrqwOyIgd4mOB2qblL9W_e4REbdTbcz3lzbEUU7SAw5vvVSjOUNBBV-A6fv7EWUrg7fGoi8ntBpark1x-N0NCeFAHeunHe47OTx5tIhylcPrAoHYs.hNjiH92Yf681F9Xrbz88yxybmxhiZCsUCF_lTMqGE2c&dib_tag=se&keywords=desktop+pc&qid=1732582776&sprefix=desktop+p%2Caps%2C146&sr=8-54"
+                    class="buy-btn">
+                    <img src="https://freepnglogo.com/images/all_img/1715487998amazon-logo-transparent.png"
+                        alt="Amazon Logo">
+                </a>
+                <p>Now Available!</p>
+            </div>
+            <div class="product" id="prebuilt" data-value="9">
+                <img id="pc-photo" src="../PresetPackagePage Folder/Images/Alienware Aurora R16.jpg"
+                    alt="Product Image">
+                <p class="product-name">Alienware Aurora R16</p>
+                <p class="product-specs">Intel Core i7-14700F Processor/16GB DDR5 RAM/512GB SSD/1TB HDD/NVIDIA GeForce
+                    RTX 4060 8GB GDDR6</p>
+                <a href="https://www.amazon.ca/Alienware-Aurora-R16-Gaming-Desktop/dp/B0CY5PYMC9/ref=sr_1_12?crid=3GP4ACKBIGLWY&dib=eyJ2IjoiMSJ9.dRkko3fauy2FHXD9zFTC7LMbF6RKvq__1INoE_jh65EaethqjKt7-KoUbIoLM70LyXhxI2QJ7hvUsSX59ulqY7j6_9-F2CH9aDvuY8ZURm1WUtRYtPqGcC1hAVemq-s9EEmClRpjZoj8CGafllmLYXACBxNruqiBDymCE7vf4vr1I15ymkDAmHXQxJIUb5N12tf9iuHou-wkLDyaOTHLX5UFQBQlyzqkhvQSjr-0BU1YoZl8YLgHrXFknAWw8VFXbI25o53kTpCFHRHKW8tSfGl8rrJatYejKLVdtZj_DbA.Yw22mrhvo8s9KGgpgTPQVNvu0Odtz_5idHMEe3TMmTo&dib_tag=se&keywords=pc&qid=1732583255&sprefix=pc%2Caps%2C149&sr=8-12&th=1"
+                    class="buy-btn">
+                    <img src="https://freepnglogo.com/images/all_img/1715487998amazon-logo-transparent.png"
+                        alt="Amazon Logo">
+                </a>
+                <p>Now Available!</p>
+            </div>
+            <div class="product" id="laptop" data-value="10">
+                <img id="laptop-photo" src="../PresetPackagePage Folder/Images/Alienware M15.jpg" alt="Product Image">
+                <p class="product-name">Dell Alienware M15</p>
+                <p class="product-specs">15.6" 2560x1440 QHD 240Hz/Core i7-12700H/1TB SSD Hard Drive/32GB RAM/Nvidia
+                    GeForce RTX 3060</p>
+                <a href="https://www.amazon.ca/Dell-Alienware-m15-R7-Laptop/dp/B0BHN8LB6Z/ref=sr_1_15?crid=1RFOOZSXAV6U&dib=eyJ2IjoiMSJ9.XSqwGdA7WLd9QOC7bMuwVZjLzoTEuq8_IwuEsTA1V0TIS_Y3jo2WkJbefDmzjiyKI8fSNAQpF5MTZKHE44QVdK-GEEtZyNWhE6vBeHomb-yY6aK0MMOboHQJfIZ3tCHCJhLxgRhF4kQ9s_MyC2dkSocd17POAbAMf1p7RYaUcZ0cIizbVNiPTEFdfY5o4Otf22Uf8ldb1nK2rgEvTgECNBt099xCMiWUwF0tDi-8HhScIJmGmd1PS3UmgyltrwiwBwh3e3IxpbZq4PTIpmJ_V55-7UJiXnbJh1Uyx8LkeCc.8rWqEwEjOS1YEeYVB-uJeZSzqQlYNTBI8WaDHjxeCmE&dib_tag=se&keywords=alienware%2Blaptop&qid=1732499341&sprefix=alienware%2Blaptop%2Caps%2C100&sr=8-15&th=1"
+                    class="buy-btn">
+                    <img src="https://freepnglogo.com/images/all_img/1715487998amazon-logo-transparent.png"
+                        alt="Amazon Logo">
+                </a>
+                <p>Now Available!</p>
+            </div>
+            <div class="product" id="laptop" data-value="11">
+                <img id="laptop-photo" src="../PresetPackagePage Folder/Images/Asus Tuf A15.jpg" alt="Product Image">
+                <p class="product-name">ASUS TUF A15</p>
+                <p class="product-specs">15.6” 144Hz FHD Display/AMD Ryzen™ 5 7535HS Processor/GeForce RTX 2050/8GB DDR5
+                    RAM/512GB PCIe SSD</p>
+                <a href="https://www.amazon.ca/ASUS-Display-RyzenTM-Processor-FA506NF-AS51-CA/dp/B0CLNTWZJG/ref=sr_1_5?crid=1GI466OARBUX9&dib=eyJ2IjoiMSJ9.iSbt26FMQnYLWfNnaanp23ne9VXt7EZ14XksDU1eWK0PsR8HWAMAPs-3Etug7Rk6bx2CHoyrPfy6eZgu0JT4LT0ZreImHPJI0wo7hPhPqUTWbxRFW-fkZ4zjiqRS0Fh1TooDFFwsnA0rwEUt2cUTXLU6MptipkKdpQyEkj87IsLogP8ockwL2Cj9dgmhVcNyotvMNouJmc--R3TljgzZ4zjmnP9Cv0z_i57Cq3Duz_MQD9jwAANAAw1TFX24OH4SKHjkA2N8AzTt4kztHR1AQGxT2gQK-1qUMhxfTKnsWCM.o31-IWXj8ympOz36R2h4MgG_gPfJoTakBEAljKburOo&dib_tag=se&keywords=gaming+laptop&qid=1732578853&sprefix=gaming+laptop%2Caps%2C125&sr=8-5"
+                    class="buy-btn">
+                    <img src="https://freepnglogo.com/images/all_img/1715487998amazon-logo-transparent.png"
+                        alt="Amazon Logo">
+                </a>
+                <p>Now Available!</p>
+            </div>
+            <div class="product" id="laptop" data-value="12">
+                <img id="laptop-photo" src="../PresetPackagePage Folder/Images/ROG Strix G16.jpg" alt="Product Image">
+                <p class="product-name">ASUS ROG Strix G16</p>
+                <p class="product-specs">16” 16:10 FHD+ 165Hz/GeForce RTX 4060/Intel Core i7-13650HX/16GB DDR5/1TB PCIe
+                    SSD</p>
+                <a href="https://www.amazon.ca/ASUS-Strix-Gaming-Laptop-G614JV-AS71-CA/dp/B0CS4B9QZ1/ref=sr_1_5_mod_primary_new?crid=1E51W47NDPUV0&dib=eyJ2IjoiMSJ9.tyA0ee6m1I60MWvWemp-e_4WlAmM7SxzvFHVW0HHx8Y3idahkHRyeu64ynarrNFJPOzVuVLkxv3bfeqT5v8buFVToNinS0hRcNjE9CwATWa0-MeoAGureyB3-ecSihlmGcutRMfVdgGutW0D5vSHPWjComktTC_P9blAneJMLAfPH6TaKkK1ok0B2nHTYYBB5WBtKmypxURjaNQ_Ffp1AF6QHB36hHnW6XyzPIblzHZe6YeoQ-205msG32Za5ahwL0YJtJlMO-WfhqIdMwidQaoK7c0LYfZEhNZD7-qDa2w.a4hXlFNFRYd0YdcRqHqrAkei_xYFhf9O4e00HRCaD9s&dib_tag=se&keywords=asus+rog+strix+g16&qid=1732579549&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=asus+rog+strix+g16%2Caps%2C105&sr=8-5"
+                    class="buy-btn">
+                    <img src="https://freepnglogo.com/images/all_img/1715487998amazon-logo-transparent.png"
+                        alt="Amazon Logo">
+                </a>
+                <p>Now Available!</p>
+            </div>
+            <div class="product" id="laptop" data-value="13">
+                <img id="laptop-photo" src="../PresetPackagePage Folder/Images/Nitro 5.jpg" alt="Product Image">
+                <p class="product-name">Acer Nitro 5</p>
+                <p class="product-specs">15.6" FHD Gaming Laptop/Intel core i5-12450H/NVIDIA GeForce RTX 3050/16GB
+                    RAM/512GB SSD</p>
+                <a href="https://www.amazon.ca/Acer-Laptop-i5-12450H-GeForce-Windows/dp/B0BTJDW38Q/ref=sr_1_2?crid=3I31B24K9TZSI&dib=eyJ2IjoiMSJ9.Yh92J8heBzhTv5r2U_fUiKGdBJaFe-yX9idznjC0y477TmnMZ14MbWOlkHIQHfXPnQWduBvO6k0_wEXV-YGdmxvmAar8RKx7ZEXrV3VaqMbGVUYvm5a5J2ZkLOwgu_DeovwXZsXONGBMsPXZZsQELbvALP363NIm6h5faq9EkCvE5Cz8B1u1uHhGPYaE0A8HdIKypb4C0naldI9OozaSXYdkYdSYgS5Yhs9tJPjTfWhZo3CChaRRnzNuSdSvY9yDF8e54Jnza0fL0oMu87rfGwHksN0HgqJ1KAGfoch1VhY.tM6rnRBmvLbPGJerFfNOfJY66UielXuBlFQit2NJc38&dib_tag=se&keywords=nitro+5&qid=1732579504&sprefix=nitro+%2Caps%2C133&sr=8-2"
+                    class="buy-btn">
+                    <img src="https://freepnglogo.com/images/all_img/1715487998amazon-logo-transparent.png"
+                        alt="Amazon Logo">
+                </a>
+                <p>Now Available!</p>
+            </div>
+            <div class="product" id="laptop" data-value="14">
+                <img id="laptop-photo" src="../PresetPackagePage Folder/Images/Dell G16.jpg" alt="Product Image">
+                <p class="product-name">Dell G16</p>
+                <p class="product-specs">16-inch QHD+ 240Hz 3ms Display/Intel Core i9-13900HX/16GB DDR5 RAM/1TB
+                    SSD/NVIDIA GeForce RTX 4070 8GB GDDR6,</p>
+                <a href="https://www.amazon.ca/Dell-G16-7630-Gaming-Laptop/dp/B0D1KRP6SF/ref=sr_1_6?crid=JBHLUBV0AL11&dib=eyJ2IjoiMSJ9.PvKszHjZoRcYcakjrxoIRqfWiFeuh7pH_gKCdfUnqJ3vJwseJXUGQZZQZQHQJm_bhP4qjzXuWtxAFkEmbWQTiTSbBLdgAJ9qxRTyb_4RDy7pLtHIDFqQV8BAc72Zo3CMsxZi1a2j7VrwXda35hDGKCVpbMlkInLLQxNbNStb7XLyLzhAicfhEoPakl9E7xrg1ex5XQccEgVVnVzMQ-TImaQkyZFB9VnIzxPoWhNOC7dgpUab6c98u8FBrF19sGM0Jf4Vb82qOZ48fNQGNezhupSzGxyXx8gglZCmv3H6_20.VTJV0lCk3chjE78VV9lXcqfJFRElxz_rBrznhSNR8yQ&dib_tag=se&keywords=gaming+laptops&qid=1732579379&sprefix=gaming+laptops%2Caps%2C115&sr=8-6"
+                    class="buy-btn">
+                    <img src="https://freepnglogo.com/images/all_img/1715487998amazon-logo-transparent.png"
+                        alt="Amazon Logo">
+                </a>
+                <p>Now Available!</p>
+            </div>
+            <div class="product" id="laptop" data-value="15">
+                <img id="laptop-photo" src="../PresetPackagePage Folder/Images/ROG zephyrus G16.jpg"
+                    alt="Product Image">
+                <p class="product-name">ASUS ROG Zephyrus G16</p>
+                <p class="product-specs">16” ROG Nebula Display 2.5K OLED Panel 240Hz/0.2ms/100% DCI-P3, RTX™ 4060/AMD
+                    Ryzen™ AI 9 HX 370 CPU/32GB LPDDR5X/1TB PCIe 4.0 SSD</p>
+                <a href="https://www.amazon.ca/Zephyrus-Display-RyzenTM-LPDDR5X-GA605WV-XB96/dp/B0DBFSRLST/ref=sr_1_12?crid=1E51W47NDPUV0&dib=eyJ2IjoiMSJ9.tyA0ee6m1I60MWvWemp-e_4WlAmM7SxzvFHVW0HHx8Y3idahkHRyeu64ynarrNFJPOzVuVLkxv3bfeqT5v8buFVToNinS0hRcNjE9CwATWa0-MeoAGureyB3-ecSihlmGcutRMfVdgGutW0D5vSHPWjComktTC_P9blAneJMLAfPH6TaKkK1ok0B2nHTYYBB5WBtKmypxURjaNQ_Ffp1AF6QHB36hHnW6XyzPIblzHZe6YeoQ-205msG32Za5ahwL0YJtJlMO-WfhqIdMwidQaoK7c0LYfZEhNZD7-qDa2w.a4hXlFNFRYd0YdcRqHqrAkei_xYFhf9O4e00HRCaD9s&dib_tag=se&keywords=asus+rog+strix+g16&qid=1732579549&sprefix=asus+rog+strix+g16%2Caps%2C105&sr=8-12"
+                    class="buy-btn">
+                    <img src="https://freepnglogo.com/images/all_img/1715487998amazon-logo-transparent.png"
+                        alt="Amazon Logo">
+                </a>
+                <p>Now Available!</p>
+            </div>
+            <div class="product" id="laptop" data-value="16">
+                <img id="laptop-photo" src="../PresetPackagePage Folder/Images/Asus Tuf F15.jpg" alt="Product Image">
+                <p class="product-name">ASUS TUF F15</p>
+                <p class="product-specs">15.6” FHD 144Hz Display/GeForce RTX 3050/Intel Core i5-12500H/8GB DDR4/512GB
+                    PCIe SSD</p>
+                <a href="https://www.amazon.ca/Display-GeForce-i5-12500H-Windows-FX507ZC4-AS51-CA/dp/B0CS4XGCK2/ref=sr_1_10?crid=3J2N36H2IB9NR&dib=eyJ2IjoiMSJ9.iSbt26FMQnYLWfNnaanp23ne9VXt7EZ14XksDU1eWK1TL-cFxwuXcsjop-0Q3a4VC7TPG45Qg7kzNHvf6Y3zrdbXVYwD75W1Q55xVMYDfrBlEXmebNYyWqN_zw78Hp6GejE0xFrf4EMP95L3zLVdyc9JmjCm9BPU3g15Rob9PKTYYily9uZhezxRLDmxFuVr_Kjd29HS3GbAgZr-TGVdwCz4MHLNKBN1260s2vQBjEz-VCaJfcb7TLQdXxGGOjvWVjQHeG5rRHo42OIfVczfXpMCLRnUX1VlW8uO4jStCEg._DpmNeJ--J3WxnT795BAhIWf7-v-VHYfXHYhDfN2Raw&dib_tag=se&keywords=gaming+laptops&qid=1732579754&sprefix=gaming+laptops%2Caps%2C118&sr=8-10"
+                    class="buy-btn">
+                    <img src="https://freepnglogo.com/images/all_img/1715487998amazon-logo-transparent.png"
+                        alt="Amazon Logo">
+                </a>
+                <p>Now Available!</p>
+            </div>
+            <div class="product" id="laptop" data-value="17">
+                <img id="laptop-photo" src="../PresetPackagePage Folder/Images/Asus Rog Strix g17.jpg"
+                    alt="Product Image">
+                <p class="product-name">ASUS ROG Strix G17</p>
+                <p class="product-specs">17.3” WQHD 240Hz/GeForce RTX 4060/AMD Ryzen 9 7945HX/16GB DDR5/1TB PCIe SSD</p>
+                <a href="https://www.amazon.ca/Gaming-GeForce-Windows-Keyboard-G713PV-DS91-CA/dp/B0BS9YRLDR/ref=sr_1_5?crid=1AMZTS8BYBXHH&dib=eyJ2IjoiMSJ9.UEjIMc8JSgmMxBMa9a6-sXuJaTLz2885BtK_X2fF6xWjhXlA3wzjgMJHWnZMNyVpX0KnUdUBVF9NDDAFy4RH49-fl_HWOd_93dqiKMuMWtuGVQg7kF5xw5r096xa8I3v5LitrMOb2KuxmgE1KWRHvyeXe46BZQ32plM3dtQZM7E614K1H2MSV6HjD4gspSHHhqmQF00vzx-YVy6kJ1Q3ROLsbnEyF8JOE-hLHRYze7OPynmUrEcWfVo5ELXGgj0h0npSACvTwMs8xWrq6j1R_pxxNBHCsl8Vhbm5iVMRy7U.jLDlZ9d0XzUlpXYvkkCwqQZrYSvQd-CcqgzKnqvdinQ&dib_tag=se&keywords=rog+strix+g17&qid=1732580158&sprefix=rog+strix+g1%2Caps%2C94&sr=8-5"
+                    class="buy-btn">
+                    <img src="https://freepnglogo.com/images/all_img/1715487998amazon-logo-transparent.png"
+                        alt="Amazon Logo">
+                </a>
+                <p>Now Available!</p>
+            </div>
+            <div class="product" id="laptop" data-value="18">
+                <img id="laptop-photo" src="../PresetPackagePage Folder/Images/Alienware M18 R2.jpg"
+                    alt="Product Image">
+                <p class="product-name">Alienware M18 R2</p>
+                <p class="product-specs">18 QHD+ 165Hz 3ms Display/Intel Core i9-14900HX/32GB DDR5 RAM/1TB SSD/NVIDIA
+                    GeForce RTX 4080 12 GB GDDR6</p>
+                <a href="https://www.amazon.ca/Alienware-M18-Gaming-Laptop-i9-14900HX/dp/B0CWHGBWL6/ref=sr_1_4?crid=16H7VS2ZLLU8&dib=eyJ2IjoiMSJ9.PaORFEuhS7PhWDM2gsVj3aNWoPtJYE471ISVFQtTQxFvDWNuGgX8S0Bp3KyvVFI-DC-UyMUiXdnBVgOQCyuIwRkNshvVd9tsgpFXzpVkGuZ9wvO50cPtIK3A3Z8NvMlTZovDEuldewIjhzPg2XWw38cK7wTLLi-a5xb2c_Pm3ij1yp0n_xMdEQtDtx9rNyTDqEKsU7cVUj_GCbPJkSpWnr8apDGO8MH8kb2sB8K7tH4U_tNYSZppldmdEtAw4l4sfFwZXJX-0gBYO7_hT9QJEy_BUj9GChu2xzAq3dNCG3E.GxCtVE8MPFkqkYZagzJbCDlpQ2aSArHheCp2VB91mck&dib_tag=se&keywords=alienware%2Blaptop&qid=1732579988&sprefix=alienware%2Blaptop%2Caps%2C126&sr=8-4&th=1"
+                    class="buy-btn">
+                    <img src="https://freepnglogo.com/images/all_img/1715487998amazon-logo-transparent.png"
+                        alt="Amazon Logo">
+                </a>
+                <p>Now Available!</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo-section">
+                <div class="logo">PC Forge</div>
+                <p class="description">
+                    PC Forge is a tool that makes PC building easier than ever. You can choose from a range of
+                    components and check the compatibility with your system to build your perfect PC.
+                </p>
+                <p class="description">
+                    To simplify the selection and management of PC parts, we provide a platform that simplifies the
+                    process and provides you with the best possible setup for your computer.
+                </p>
+            </div>
+            <div class="footer-contact-section">
+                <p class="contact-title">Have a query? Contact Us at 24/7 Customer Service</p>
+                <p class="contact-info">
+                <div class="phone-number d-flex align-items-center">
+                    <i class="bi bi-telephone me-2"></i>
+                    <p class="mb-0">1 899-889-8888</p>
+                </div>
+                <div class="email d-flex align-items-center">
+                    <i class="bi bi-envelope me-2"></i>
+                    <p class="mb-0">customerservice@pcforge.com</p>
+                </div>
+                </p>
+            </div>
+            <div class="footer-social-section">
+                <a href="https://instagram.com">
+                    <h1 class="m-4">
+                        <i class="bi bi-instagram"></i>
+                    </h1>
+                </a>
+                <a href="https://facebook.com">
+                    <h1 class="m-4">
+                        <i class="bi bi-facebook"></i>
+                    </h1>
+                </a>
+                <a href="https://github.com/home">
+                    <h1 class="m-4">
+                        <i class="bi bi-github"></i>
+                    </h1>
+                </a>
+            </div>
+        </div>
+        <div class="footer-disclaimer">
+            <p>
+                PC Forge™ is a participant of the Amazon Associates Program, through which we earn advertising
+                commission on qualified sales by linking to the Amazon products.
+            </p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
